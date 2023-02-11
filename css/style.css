@@ -13,16 +13,20 @@ body {
   margin: 0 auto;
 }
 
-
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 .header-container {
-  width: 1510px;
-  height: 747px;
+  max-width: 1510px;
+  height: 100%;
   margin: 0 auto;
   background:
   linear-gradient(rgba(37, 43, 73, 1), rgba(0, 0, 0, 0.5)),
   url("../images/img.png");
-
+  padding-bottom: 0.5px;
 }
+
 
 .navbar {
   height: 100px;
@@ -33,15 +37,27 @@ body {
   position: relative;
 }
 
+@media (max-width: 1170px) {
+  .navbar {
+  max-width: 970px;
+  }
+
+}
 .navbar__logo {
   margin: 38px 0 36px 170px;
 }
 
 .navbar__link {
   margin: 36px 0;
-  width: 670px;
-  height: 28px;
+  max-width: 670px;
+  height: 100%;
   display: flex;
+}
+
+@media (max-width: 670px) {
+  .navbar__link {
+    max-width: none
+  }
 }
 
 .navbar__link-text {
@@ -71,6 +87,20 @@ body {
   background: #BABBC5;
   margin: 0 auto
 }
+.button {
+  text-align: center;
+
+}
+
+.button-text {
+  font-weight: 900;
+  font-size: 24px;
+  max-width: 370px;
+  padding: 18px 60px;
+  background: #FF4343;
+  border: #FF4343 1px solid;
+  color: #FFFFFF;
+}
 
 .promo {
   font-family: "Raleway", sans-serif;
@@ -83,7 +113,7 @@ body {
   font-weight: 900;
   line-height: 75.14px;
   width: 1170px;
-  height: 150px;
+  height: ;
   text-align: center;
   text-transform: uppercase;
 }
@@ -101,30 +131,36 @@ body {
 }
 
 .promo__button-text {
-  font-weight: 900;
-  font-size: 24px;
-  width: 370px;
-  height: 80px;
-  background: #FF4343;
-  border: #FF4343 1px solid;
-  color: #FFFFFF;
+
 }
 
 /*.main {}*/
 
 .part-1 {
-  width: 1510px;
-  height: 949px;
+
+  height: 100%;
   display: flex;
   align-items: center;
+  margin: 70px 0 70px 0;
+
 }
 
 .part-1-container {
   max-width: 1170px;
   height: 717px;
   margin: 0 auto;
-  display: flex;
 }
+
+/*@media (max-width: 1170px) {
+  .part-1-container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .part-1-container {
+    max-width: 750px;
+  }
+}*/
 
 .part-1-row {
   display: flex;
@@ -135,8 +171,9 @@ body {
 
 .part-1-column {
   max-width: 370px;
-  max-height: 307px;
+  max-height: 100%;
   font-family: "Raleway", sans-serif;
+  margin-bottom: 100px;
 }
 
 .part-1-column__cover-img {
@@ -163,3 +200,133 @@ body {
   font-weight: 400;
   line-height: 21.13px;
 }
+
+
+.part-2 {}
+.part-2-container {
+  height: 100%;
+  max-width: 1510px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.part-2-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.part-2-column {
+  padding: 0;
+  margin: 0;
+}
+
+.part-2-column__cover {
+  padding: 0;
+  margin: 0;
+}
+
+.part-2-column__cover-img {
+  height: 100%;
+  padding: 0;
+}
+
+/*team*/
+
+.team {
+  margin: 114px 0;
+}
+
+/*.team-container {}*/
+
+.team-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-column {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 117%;
+}
+
+/*.person {}*/
+
+/*.person__cover {}*/
+
+.person__name {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.person__status {
+  margin-top: 5px;
+  text-transform: uppercase;
+  color: #FF4343;
+}
+
+.person__description {
+  margin-top: 18px;
+  max-width: 270px;
+}
+
+.person__contacts {
+  margin-top: 38px;
+}
+
+.person__contacts-cover {
+  margin-right: 6px;
+}
+
+/* testimonials*/
+
+/*.testimonials {}
+
+.testimonials-container {}*/
+
+.testimonials-row {
+  display: flex;
+  max-height: 490px;
+}
+
+.testimonials-column {
+  color: #FFFFFF;
+  display: flex;
+}
+
+/*.testimonials-column__cover {}*/
+
+
+.testimonials-column__slogan {
+  background: #5C3249;
+}
+
+.testimonials-column__slogan-title {
+  font-family: "Cardo", serif;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 136%;
+  font-weight: 400px;
+  margin: 116px 170px 0 129px;
+  padding-bottom: 20px;
+}
+
+.testimonials-column__slogan-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 117%;
+  margin: 10px 170px 0 130px;
+}
+
+.testimonials-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
