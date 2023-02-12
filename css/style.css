@@ -17,6 +17,7 @@ body {
   max-width: 1170px;
   margin: 0 auto;
 }
+
 .header-container {
   max-width: 1510px;
   height: 100%;
@@ -93,10 +94,11 @@ body {
 }
 
 .button-text {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 24px;
-  max-width: 370px;
-  padding: 18px 60px;
+  padding: 18px 70px;
   background: #FF4343;
   border: #FF4343 1px solid;
   color: #FFFFFF;
@@ -131,13 +133,11 @@ body {
 }
 
 .promo__button-text {
-
 }
 
 /*.main {}*/
 
 .part-1 {
-
   height: 100%;
   display: flex;
   align-items: center;
@@ -203,6 +203,7 @@ body {
 
 
 .part-2 {}
+
 .part-2-container {
   height: 100%;
   max-width: 1510px;
@@ -326,7 +327,41 @@ body {
 
 .testimonials-dots {
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
+  background: #E5E5E5;
 }
 
+.download {
+  height: 100%;
+  background: #E5E5E5;
+}
+
+/*.download-container {}*/
+
+.download-info {
+  font-family: "Raleway", sans-serif;
+  line-height: 117%;
+  text-align: center;
+  padding: 114px 0;
+}
+
+.download-info__title {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px 0;
+  margin-bottom: 6px;
+}
+
+.download-info__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.download-info__button {
+  display: flex;
+  justify-content: center;
+}
+
+/*.download-info__button-text {
+}*/
 
